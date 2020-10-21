@@ -2,8 +2,18 @@
 
 ## Build
 
+```
 docker build -t webxq .
+```
 
 ## Run
 
-docker run -i --rm webxq < test.xml
+```
+docker run --rm -p 8000:8080 webxq
+```
+
+## Test
+
+```
+curl --data-binary @test.xml localhost:8000
+```
