@@ -5,7 +5,7 @@ FROM openfaas/classic-watchdog:0.18.1 as watchdog
 FROM python:3.8
 
 ## Define the version (updated on each release):
-ENV VERSION=0.0.1
+ENV VERSION=0.0.2-SNAPSHOT
 
 ## Copy watchdog:
 COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
